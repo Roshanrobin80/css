@@ -2,15 +2,44 @@
     color: blueviolet;
     border-style: dotted ;
     border-color:green ;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px red
+
 }
+p.uppercase {
+  text-transform: uppercase;}
+  p.lowercase{
+    text-transform: lowercase;
+  }
+  p{
+    text-indent: 50px;
+  }
+  p.small {
+    line-height: 4;}
+    p.big {
+      line-height: 2;}
+      p.one{
+        word-spacing: 50px;
+      }
+      p.two{
+        word-spacing: -4px;}
+        
 h2{color: crimson;}
 .a2{
     color: rgb(0, 4, 255);
     border: 2px solid red;
   border-radius: 50px 2px 20px ;
   margin-top: 50px;
+  text-decoration:  underline;
+  text-decoration-style: wavy;
+  letter-spacing: 5px;
+  
 
 }
 #a1,.a2,p{
     
+}
+.three{
+  white-space: nowrap;
+
 }
