@@ -23,6 +23,10 @@ p.uppercase {
       }
       p.two{
         word-spacing: -4px;}
+        .p1{
+          font-family: "Lucida Console", "Courier New", monospace;
+        
+        } 
         
 h2{color: crimson;}
 .a2{
@@ -43,3 +47,52 @@ h2{color: crimson;}
   white-space: nowrap;
 
 }
+p.italic{
+  font-style: italic;
+
+}
+p.thicker{
+  font-weight: 900;
+
+}
+p.smallc{
+  font-variant: small-caps;
+}
+h1.hidden{
+  visibility:hidden;
+}
+.main{
+  width: 400px;
+  height: 400px;
+background-color: aqua;
+}
+.sub{
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.main1{
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+.sub1{
+ width: 200px;
+ height: 200px;
+ background-color: green;
+ position: relative;
+ top: 100px;
+ left: 100px;
+}
+.sub2{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  top: 50px;
+  left: 50px;
+ }
+ 
