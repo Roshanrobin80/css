@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+
+
+
         a:link{
             color:orange;
         }
@@ -33,6 +36,100 @@ img{
 img:hover{
     opacity: 0.9;
 }
+.s1::first-letter {
+  color: blue;
+  font-size: 200%;
+}
+.s1::first-line {
+  color: green;
+  font-variant: small-caps;
+}
+h1::after{
+  content: url(kbfc.jpeg);
+}
+h2::before{
+  content: url(download\ \(1\).jpeg);
+}
+::marker { 
+  color: orange;
+  font-size: 23px;
+}
+::selection {
+  color: aqua;
+  background:violet;
+}
+
+body{
+margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: blue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: sandybrown;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a3 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a3:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
     </style>
 <head>
     <meta charset="UTF-8">
@@ -40,10 +137,46 @@ img:hover{
     <title>Document</title>
 </head>
 <body>
+
+    <div class="header">
+      
+      
+      <ul>
+        <li><a3 class="active" href="#home">Home</a3></li>
+        <li><a3 href="#news">News</a3></li>
+        <li><a3 href="#contact">Contact</a3</li>
+      </ul>
+
+
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div style="margin-left:25%;padding:1px 16px;height:100px;">
+
+
+    <p class="s1" >can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+    <h2>Hello Everyone</h2>
+<h1>Welcome to KBFC</h1>
+<ul>
+    <li>luna</li>
+    <li>Sahal</li>
+    <li>sachin</li>
+</ul>
+<ol>
+    <li>Messi</li>
+    <li>Neymar</li>
+    <li>Suarez</li>
+</ol>
+<h3>Have a nice day</h3>
     <p><b><a href="css exr.html" target="_blank"> click here</a></b></p>
     <p><a class="highlight" href="css_syntax.asp">Offers</a></p>
     <div>Execlussive prices</div>
     <img src="doggy.webp" alt="no img">
+
 
 
 </body>
