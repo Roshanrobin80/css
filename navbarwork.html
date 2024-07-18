@@ -32,6 +32,49 @@ img{
 h3{
     color: white;
 }
+
+.grid-container {
+  display:  grid;
+  justify-content: end;
+  gap: 10px ;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  background-color: crimson;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color:white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid-container1{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: violet;
+  padding: 10px;
+}
+
+.grid-container1 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.i15{
+grid-area:1/2/5/6 ;
+}
+
+
 </style>
 </head>
 <body>
@@ -45,5 +88,36 @@ h3{
         <div>
             <img src="nature.jpg" alt="">
         </div>
+
+        <div class="grid-container">
+          <div class="item1">1</div>
+          <div class="item2">2</div>
+          <div class="item3">3</div>  
+          <div class="item4">4</div>
+          <div class="item5">5</div>
+          <div class="item6">6</div>  
+          <div class="item7">7</div>
+          <div class="item8">8</div>
+          <div class="item9">9</div>  
+        </div>
+
+        <div class="grid-container1">
+          <div class="i1">1</div>
+          <div class="i2">2</div>
+          <div class="i3">3</div>  
+          <div class="i4">4</div>
+          <div class="i5">5</div>
+          <div class="i6">6</div>
+          <div class="i7">7</div>
+          <div class="i8">8</div>  
+          <div class="i9">9</div>
+          <div class="i10">10</div>
+          <div class="i11">11</div>
+          <div class="i12">12</div>
+          <div class="i13">13</div>
+          <div class="i14">14</div>
+          <div class="i15">15</div>
+        </div>
+
 </body>
 </html>
