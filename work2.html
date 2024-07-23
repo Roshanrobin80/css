@@ -14,13 +14,34 @@
     'sub sub sub sub img img'
     'msg msg msg msg img img';
     background-color: deeppink;
+    grid-template-rows: 30px 60px 50px;
     padding: 10px;
 }
 .head{background-color: blue;}
 .nav{background-color: chocolate;}
 .sub{background-color: darkgrey;}
 .msg{background-color: darkred;}
-.img{background-color: darkviolet;}
+.bob{
+    width: 100%;
+    height: 100%;
+}
+.read{background-color: yellow;}
+.view{background-color: green;}
+#a2{font-size: 10vw;}
+@media screen and (min-width:500px) {
+    .main{
+    display: grid;
+    grid-template-areas:
+    'head head head head '
+    'nav nav nav nav'
+    'sub sub sub sub'
+    'img img img img'
+    'msg msg msg msg ';
+    background-color: aqua;
+    grid-template-rows: 60px 60px 60px 1000px 100px;
+    }   
+}
+
 </style>
 </head>
 <body>
@@ -29,7 +50,10 @@
     <div class="nav">nav</div>
     <div class="sub">sub</div>
     <div class="msg">msg</div>
-    <div class="img">img</div>
+    <div class=img><img class="bob" src="doggy.webp" alt=""></div>
+    <div class="read">readmore</div>
+    <div class="view">viewall</div>
+    <div id="a2">Come on everybody </div>
 </div>
 </body>
 </html>
